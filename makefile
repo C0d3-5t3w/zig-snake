@@ -1,7 +1,8 @@
-.PHONY: build run clean test
-
-build:
+all:
 	zig build
 
 run:
-	zig run
+	./zig-snake
+
+clean:
+	zig build clean

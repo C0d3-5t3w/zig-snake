@@ -7,4 +7,4 @@ pub fn build(b: *std.build.Builder) void {
     exe.addModule("internal/game", "src/internal/game.zig");
     exe.addModule("internal/gui", "src/internal/gui.zig");
     exe.install();
-}
+};

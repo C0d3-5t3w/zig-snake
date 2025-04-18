@@ -41,7 +41,7 @@ pub fn initGame(state: *GameState, allocator: *std.mem.Allocator, width: i32, he
     state.snake = Snake{ .body = initial, .dir = Direction.Right };
     // place food at an initial position
     state.food = Food{ .pos = Position{ .x = width / 4, .y = height / 4 } };
-}
+};
 
 pub fn updateGame(state: *GameState, allocator: *std.mem.Allocator) !void {
     if (state.gameOver) return;
@@ -76,4 +76,4 @@ pub fn updateGame(state: *GameState, allocator: *std.mem.Allocator) !void {
         // remove tail (shrink snake)
         state.snake.body = state.snake.body[0 .. state.snake.body.len - 1];
     }
-}
+};

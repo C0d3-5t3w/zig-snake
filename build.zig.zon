@@ -1,4 +1,4 @@
 {
-    "build_mode": "release-fast",
-    "target": "native"
+    "build_mode": "release-fast";
+    "target": "native";
 }

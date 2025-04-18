@@ -17,4 +17,4 @@ pub fn main() !void {
     }
     try stdout.writeAll("Press any key to exit...\n");
     _ = std.io.getStdIn().readAllAlloc(allocator, 1);
-}
+};

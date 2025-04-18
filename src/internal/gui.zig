@@ -31,4 +31,4 @@ pub fn render(state: *GameState, stdout: *std.io.Writer) !void {
     if (state.gameOver) {
         try stdout.writeAll("GAME OVER\n");
     }
-}
+};
